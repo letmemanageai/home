@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let Me Manage AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #0066ff, #0033cc);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .section {
+      padding: 3rem 1rem;
+      margin: 2rem 0;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      flex: 1 1 calc(33.333% - 1.5rem);
+      background: #f0f4f8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .card i {
+      font-size: 3rem;
+      color: #0066ff;
+      margin-bottom: 1rem;
+    }
+    .package-boxes {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .package {
+      flex: 1 1 calc(33.333% - 2rem);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: linear-gradient(120deg, #f9f9f9, #e0e7ff);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .package:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .package h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .package ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .package ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .package ul li:before {
+      content: "✔";
+      color: green;
+      margin-right: 0.5rem;
+    }
+    .price {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0066ff;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta button {
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem;
+      background: linear-gradient(120deg, #0066ff, #0033cc);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .cta button:hover {
+      background: linear-gradient(120deg, #0033cc, #0066ff);
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .card, .package {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Let Me Manage AI</h1>
+  <p>Transforming AI Management into a Seamless Experience</p>
+</header>
+
+<main class="container">
+  <!-- Section 1: Struggles You Face -->
+  <section class="section">
+    <h2>Struggles You Face</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Complex AI Maintenance</h3>
+        <p>Keeping your models updated is a daunting task that steals time from innovation.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Inconsistent Model Performance</h3>
+        <p>When AI systems are not optimized, they underperform, costing you time and revenue.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Excessive Operational Costs</h3>
+        <p>Inefficient workflows inflate costs, reducing profitability and hampering growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: How We Help -->
+  <section class="section">
+    <h2>How We Help</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-cogs"></i>
+        <h3>End-to-End Management</h3>
+        <p>We handle all aspects of your AI pipeline so you can focus on growth.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Expert Troubleshooting</h3>
+        <p>Our team identifies and resolves issues before they impact your operations.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Cost Optimization Strategies</h3>
+        <p>Efficient resource allocation reduces costs and increases margins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Packages -->
+  <section class="section">
+    <h2>What You Get</h2>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:2em;">
+      Seamless automation for your lead management, follow-ups, and performance tracking. Focus on growth while we handle the details.
+    </p>
+    
+    <div class="package-boxes">
+      <div class="package">
+        <h3>Basic Package</h3>
+        <ul>
+          <li>Automated lead capture and initial qualification</li>
+          <li>Lead report generation every week</li>
+          <li>Automated lead nurturing emails</li>
+          <li>Basic follow-up reminders</li>
+          <li>AI performance monitoring and alerts</li>
+          <li>Monthly performance review and feedback loop</li>
+        </ul>
+        <div class="price">$500/month</div>
+      </div>
+
+      <div class="package">
+        <h3>Professional Package</h3>
+        <ul>
+          <li>Everything in the Basic Package</li>
+          <li>Advanced lead scoring and prioritization</li>
+          <li>Automated follow-up emails and SMS</li>
+          <li>AI-driven suggestions for lead nurturing strategies</li>
+          <li>Weekly lead status reports</li>
+          <li>Predictive lead forecasting</li>
+          <li>Performance monitoring across multiple campaigns (up to 3)</li>
+          <li>Personalized automated reminders for sales teams</li>
+        </ul>
+        <div class="price">$1,000/month</div>
+      </div>
+
+      <div class="package">
+        <h3>Premium Package</h3>
+        <ul>
+          <li>Everything in the Professional Package</li>
+          <li>Custom lead management automation tailored to your business</li>
+          <li>Real-time lead tracking and performance dashboards</li>
+          <li>Automated follow-up sequences and notifications</li>
+          <li>Integration with CRM tools for seamless management</li>
+          <li>In-depth monthly AI insights and analytics reports</li>
+          <li>Direct sales team notifications for hot leads</li>
+          <li>Custom automated workflows for specific client journeys</li>
+          <li>Unlimited lead and sales performance tracking across all campaigns</li>
+        </ul>
+        <div class="price">$2,000/month</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: CTA -->
+  <div class="cta">
+    <button>Book a Meeting Now</button>
+  </div>
+</main>
+
+</body>
+</html>
